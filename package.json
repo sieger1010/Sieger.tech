@@ -1,0 +1,26 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/app.scss dist/css/style.min.css --output-style compressed",
+    "watch-sass": "nodemon -e scss -x \"npm run build-css\"",
+    "build-js": "uglifyjs node_modules/jquery/dist/jquery.js node_modules/popper.js/dist/umd/popper.js node_modules/bootstrap/dist/js/bootstrap.js js/app.js --compress --output dist/js/scripts.min.js"
+  },
+  "keywords": ["personal website", "Sieger", "Bokschoten", "Sieger Bokschoten"],
+  "author": "Sieger Bokschoten",
+  "license": "ISC",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.8.1",
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.15.0"
+  },
+  "devDependencies": {
+    "node-sass": "^4.11.0",
+    "nodemon": "^1.18.10",
+    "uglify-js": "^3.5.3"
+  }
+}
