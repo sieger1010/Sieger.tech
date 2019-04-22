@@ -1,5 +1,9 @@
 @import "../node_modules/bootstrap/scss/functions";
 @import "variables";
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: $gray-900;
   @media screen and (min-width: 3000px) {
@@ -9,6 +13,25 @@ body {
     }
   }
 }
+
+//Navbar Styling
+i.fa-github {
+  color: $gray-100;
+  font-size: 1.5rem;
+}
+//ipad has 768px width, so navigation doesn't collapse and with current background all text is visible
+@media screen and (max-width:767px) {
+  nav.navbar-expand-md {
+    background-color:$black;
+  }
+}
+
+//On scrolling downward change navigation navbar background color
+.bg-black {
+  background-color: $black;
+  transition: background-color 500ms linear;
+}
+//End Navbar Styling
 
 //General section styles
 section {
@@ -46,12 +69,15 @@ section {
   #chalkboard {
     padding-top: 2rem;
   }
-  span {
+  span { 
     font-weight: 700;
     font-size: 1.5rem;
     color: $gray-700;
     @media screen and (min-width:3000px) {
       font-size:2.5rem;
+    }
+    @media screen and (max-width:768px) {
+      font-size: 1.2rem;
     }
     p {
       font-family: Lato;
@@ -91,7 +117,7 @@ div.overlay {
   @media screen and (max-width: 600px) {
     padding-top:30vh;
   }
-  @media screen and (max-height: 400px) {
+  @media screen and (max-height: 600px) {
     padding-top: 25vh;
   }
   
@@ -125,6 +151,10 @@ section.banner {
   @media screen and (min-width:3000px) {
     background-size:cover;
   }
+  @media screen and (max-width:500px) {
+    background: url("../assets/work-banner-mobile-vertical.jpg") no-repeat;
+    background-size:100% 100%;
+  }
 }
 
 //web.html styles
@@ -134,12 +164,6 @@ section.banner {
 //english.html styles
 .englishRow {
   margin-bottom: 20px;
-}
-
-//On scrolling downward change navigation navbar background color
-.bg-black {
-  background-color: $black;
-  transition: background-color 500ms linear;
 }
 
 //When clicking to go to an anchor link, prevent navigation bar from obscuring the top of the section.
@@ -187,9 +211,17 @@ section.banner {
 footer {
   min-height:5vh;
   padding-top:1vh;
+  padding-bottom:1vh;
   text-align:center;
   background-color: $black;
   color:$gray-100;
   font-family: Lato;
   font-weight: 300;
+  a {
+    color: $gray-200;
+    text-decoration:underline;
+  }
+  a:hover {
+    color:$gray-600;
+  }
 }
