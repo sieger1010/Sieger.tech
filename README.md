@@ -8,6 +8,9 @@ All plans and progress for this project can be viewed in the [projects](https://
 
 # Technologies Used
 
+### Bootstrap 4
+It's so quick and easy to put together the layout and navigation. With Sass I can customize any part of it I want. This cuts front end development time way down. I'm really enjoying learning more and using it with this project.
+
 ### Sass
 I'm using node-sass combined with nodemon to auto-compile my sass everytime it changes and combined with the live server plugin in VSCode the page automatically refreshes whenever changes are made to the CSS, JS, or HTML of the site. The Sass files get compiled to a single minified css file in the /dist/css folder.
 
@@ -17,5 +20,5 @@ Uglify JS compresses all of the js files I'm using into one single minified file
 ### Google Tag Manager and Analytics
 I've created a Google Tag Manager and Analytics account to view where traffic is coming from and how many website visits I receive. The purpose of using Tag Manager is so that I can include all of the different tracking codes I might want to use, for example Facebook analytics and also LinkedIn analytics.
 
-### Open Graph SEO
-Open Graph is a technology developed by Facebook to better share the meta information about things used and shared between people online. In a practical sense for my personal website this is useful so that if I share my website on LinkedIn or Facebook, it will appear with a nice thumbnail picture, a title, and a description that I choose will best represent my website, along with SEO information related to the correct url of this page which is useful if you are sending GET information in the URL to individual users but you don't want that to appear when that page is being shared to other people.
+### Open Graph
+Open Graph is a technology developed by Facebook to better share the meta information about things used and shared between people online. I'm using this to ensure that if my website is being shared on social media then the correct information will be displayed.
