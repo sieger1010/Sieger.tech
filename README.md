@@ -22,3 +22,5 @@ I've created a Google Tag Manager and Analytics account to view where traffic is
 
 ### Open Graph
 Open Graph is a technology developed by Facebook to better share the meta information about things used and shared between people online. I'm using this to ensure that if my website is being shared on social media then the correct information will be displayed.
+
+#### GPG Key Added
