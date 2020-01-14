@@ -19,6 +19,10 @@ i.fa-github {
   color: $gray-100;
   font-size: 1.5rem;
 }
+i.fa-linkedin {
+  color: $gray-100;
+  font-size: 1.5rem;
+}
 //ipad has 768px width, so navigation doesn't collapse and with current background all text is visible
 @media screen and (max-width:767px) {
   nav.navbar-expand-md {
