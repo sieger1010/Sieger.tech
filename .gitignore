@@ -1,5 +1,3 @@
 /node_modules/*
-/dist/css/style.min.css
-/dist/js/scripts.min.js
 *.code-workspace
 .vscode
